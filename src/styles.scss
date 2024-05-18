@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+$backgrcolor: rgb(103, 34, 175);
+$font_color:  rgb(202, 191, 191);
+
+html{
+    background-color: $backgrcolor;
+    color: $font_color;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 44%;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1{
+    padding-top: 10px;
+}
+
+.loading-indicator{
+    position: fixed;
+    z-index: 999;
+    height: 1em;
+    width: 1em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.loading-indicator::before{
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(125, 106, 125, 0.3);
+}
+/*
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url('./path-to-font/Roboto-Regular.ttf') format('truetype');
+  }*/

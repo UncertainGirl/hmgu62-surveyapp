@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "hmgu62-kerdoiv-kitolto-alkalmazas",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

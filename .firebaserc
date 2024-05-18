@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hmgu62-surveyapp": {
+      "hosting": {
+        "hmgu62-kerdoiv-kitolto-alkalmazas": [
+          "hmgu62-surveyapp"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hmgu62-surveyapp"
+  }
+}

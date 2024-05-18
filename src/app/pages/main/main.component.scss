@@ -1,0 +1,16 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+#brightness-slider {
+    width: 300px;
+}
+
+#mid{
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,29 @@
+<br><h1>Fill out our survey!</h1>
+<br>
+<div>
+    <form>
+        <mat-form-field appearance="fill">
+            <mat-label for="first_question">How many different sounds can cats make?</mat-label>
+            <mat-select id="first_question">
+                <mat-option value="10">about 10</mat-option>
+                <mat-option value="20">about 20</mat-option>
+                <mat-option value="50">about 50</mat-option>
+                <mat-option value="100">more than 100</mat-option> <!--this-->
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label for="second_question">The purring frequency of cats typically ranges between ... and ... Hertz.</mat-label>
+            <mat-select id="second_question">
+                <mat-option value="1435">14 & 35</mat-option>  <!--elephant-->
+                <mat-option value="1040">10 & 40</mat-option>  <!--whale-->
+                <mat-option value="25150">25 & 150</mat-option>  <!--cat-->
+                <mat-option value="150780">150 & 780</mat-option>  <!--wolf-->
+            </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" (click)="yourValue()">Go!</button>
+    </form>
+    <br>
+    <img src="assets/test.gif" />
+    <br>
+</div>

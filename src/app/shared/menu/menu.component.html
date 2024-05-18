@@ -1,0 +1,30 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/main" (click)="close()">
+        <mat-icon>home</mat-icon>
+        <span>Main</span>
+    </a>
+    <a mat-list-item routerLink="/survey" (click)="close()">
+        <mat-icon>quiz</mat-icon>
+        <span>Survey</span>
+    </a>
+    <a mat-list-item routerLink="/opinion" (click)="close()">
+        <mat-icon>rate_review</mat-icon>
+        <span>Opinion</span>
+    </a>
+    <a mat-list-item routerLink="/contact" (click)="close()">
+        <mat-icon>info</mat-icon>
+        <span>Contact</span>
+    </a>
+    <a mat-list-item routerLink="/signup" (click)="close()">
+        <mat-icon>app_registration</mat-icon>
+        <span>Sign up</span>
+    </a>
+    <a mat-list-item routerLink="/login" (click)="close()" *ngIf="!loggedInUser">
+        <mat-icon>login</mat-icon>
+        <span>Login</span>
+    </a>
+    <a mat-list-item routerLink="/login" (click)="close(true)" *ngIf="loggedInUser">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+    </a>
+</mat-nav-list>

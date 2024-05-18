@@ -1,0 +1,70 @@
+<!--<mat-card>
+    <mat-card-header id="mid">
+        <mat-card-title>Write your opinion so we can improve!</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div *ngIf="comments.length">
+            <table mat-table [dataSource]="comments" class="mat-elevation-z8">
+                <ng-container matColumnDef="username">
+                    <th mat-header-cell *matHeaderCellDef>Username</th>
+                    <td mat-cell *matCellDef="let comment">{{ comment.username }}</td>
+                </ng-container>
+                <ng-container matColumnDef="comment">
+                    <th mat-header-cell *matHeaderCellDef>Comment</th>
+                    <td mat-cell *matCellDef="let comment">{{ comment.comment }}</td>
+                </ng-container>
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef>Date</th>
+                    <td mat-cell *matCellDef="let comment">{{ comment.date | dateFormat }}</td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="['username', 'comment', 'date']"></tr>
+                <tr mat-row *matRowDef="let row; columns: ['username', 'comment', 'date'];"></tr>
+            </table>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label>Username:</mat-label>
+                <input matInput [(ngModel)]="commentObject['username']">
+            </mat-form-field><br>
+            <mat-form-field>
+                <textarea matInput rows="10" [(ngModel)]="commentObject['comment']"></textarea>
+            </mat-form-field><br>
+            <button mat-raised-button color="primary" (click)="addComment()">ADD</button>
+        </div><br>
+        <img src="assets/feedback.gif">
+    </mat-card-content>
+</mat-card>
+-->
+
+<br><h1>Write your opinion so we can improve!</h1><br>
+<div>
+    <div *ngIf="comments.length">
+        <table>
+            <tr>
+                <th>User</th>
+                <th>Comment</th>
+                <th>Date</th>
+            </tr>
+            <tr *ngFor="let comment of comments; let i = index;" [ngStyle]="{'background-color' : i % 2 === 0  ? 'rgb(103, 34, 175)' : 'whitesmoke'}">
+                <td>{{comment.username}}</td>
+                <td>{{comment.comment}}</td>
+                <td>{{comment.date | dateFormat}}</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="friend">
+        <div class="bro">
+            <mat-form-field>
+                <mat-label>Username:</mat-label>
+                <input matInput [(ngModel)]="commentObject['username']">
+            </mat-form-field><br>
+            <mat-form-field>
+                <textarea matInput rows="10" [(ngModel)]="commentObject['comment']"></textarea>
+            </mat-form-field><br>
+            <button mat-raised-button color="primary" (click)="addComment()">ADD</button>
+        </div>
+        <div class="bro"><img src="assets/feedback.gif"></div>
+    </div>
+    <br>
+    

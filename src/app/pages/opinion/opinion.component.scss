@@ -1,0 +1,33 @@
+table, th, td{
+    border: 1px solid rgb(212, 212, 212);
+    color: black;
+}
+
+th{
+    color: rgb(103, 58, 175);
+}
+
+h1, table{
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    width: 50%;
+
+}
+
+#mid{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#friend{
+    display: flex;
+    text-align: center;
+}
+
+.bro{
+    width: 50%;
+}

@@ -1,0 +1,23 @@
+<div>
+    <br><h1>Welcome to my homepage!</h1><br>
+    <img src="assets/welcome.gif" />
+    <br><br>
+    <div id="mid">
+        <mat-slider min="0" max="100" step="1" showTickMarks discrete [displayWith]="formatLabel">
+            <input matSliderThumb>
+          </mat-slider>
+          <!--
+        <label for="brightness-slider">Brightness: </label>
+        <input type="range" id="brightness-slider" min="0" max="1" step="0.01" value="1">-->
+    </div>
+</div>
+<!--
+<script>
+    const slider = document.getElementById('brightness-slider');
+    const body = document.body;
+  
+    slider.addEventListener('input', function() {
+      body.style.filter = `brightness(${this.value})`;
+    });
+</script>
+-->
